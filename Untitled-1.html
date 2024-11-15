@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div class="search-logo">
+ <input type="text" placeholder="Search..." id="searchInput">
+ <button onclick="searchFunction()">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+ </button>
+</div>
+
+<script>
+ function searchFunction() {
+    let searchInput = document.getElementById("searchInput");
+    let searchTerm = searchInput.value;
+    window.location.href = `https://www.google.com/search?q=${searchTerm}`;
+ }
+</script>
+
+</body>
+</html>
